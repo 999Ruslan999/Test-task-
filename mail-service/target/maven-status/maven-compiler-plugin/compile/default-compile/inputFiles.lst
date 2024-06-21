@@ -1,0 +1,7 @@
+C:\Users\Дарья\Desktop\IT\Test-Project\mail-service\src\main\java\org\example\mailservice\config\KafkaConfig.java
+C:\Users\Дарья\Desktop\IT\Test-Project\mail-service\src\main\java\org\example\mailservice\data\event\RegistrationChangeEvent.java
+C:\Users\Дарья\Desktop\IT\Test-Project\mail-service\src\main\java\org\example\mailservice\exception\constant\ErrorMessage.java
+C:\Users\Дарья\Desktop\IT\Test-Project\mail-service\src\main\java\org\example\mailservice\exception\KafkaSendException.java
+C:\Users\Дарья\Desktop\IT\Test-Project\mail-service\src\main\java\org\example\mailservice\handler\RegistrationChangeEventHandler.java
+C:\Users\Дарья\Desktop\IT\Test-Project\mail-service\src\main\java\org\example\mailservice\MailServiceApplication.java
+C:\Users\Дарья\Desktop\IT\Test-Project\mail-service\src\main\java\org\example\mailservice\service\MailService.java

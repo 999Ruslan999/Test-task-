@@ -1,0 +1,7 @@
+org\example\mailservice\MailServiceApplication.class
+org\example\mailservice\config\KafkaConfig.class
+org\example\mailservice\data\event\RegistrationChangeEvent.class
+org\example\mailservice\exception\KafkaSendException.class
+org\example\mailservice\handler\RegistrationChangeEventHandler.class
+org\example\mailservice\service\MailService.class
+org\example\mailservice\exception\constant\ErrorMessage.class
