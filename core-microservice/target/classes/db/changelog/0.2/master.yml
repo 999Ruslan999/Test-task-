@@ -1,0 +1,4 @@
+databaseChangeLog:
+  - include:
+      file: update-user-credential-table.sql
+      relativeToChangelogFile: true
