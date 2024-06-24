@@ -1,0 +1,31 @@
+server:
+  port: 8888
+spring:
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092, localhost:9094
+      group-id: mail-notification-created-events
+      properties:
+        spring:
+            json:
+              trusted:
+                packages: "*"
+      backoff:
+        type: fixed
+        interval: 1000
+        currentAttempts: 5
+        maxAttempts: 10
+
+mail:
+  host: smtp.yandex.ru
+  username: message_event_@mail.ru
+  password: Gb9t7KpgRBYd
+  port: 465
+  mail-protocol: "mail.transport.protocol"
+  protocol: smtps
+  mail-debug: "mail.debug"
+  debug: true
+  url: localhost:8088
+  email: "email"
+  subject: "Message"
+  text: "Сообщение: "
