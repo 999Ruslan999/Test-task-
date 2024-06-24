@@ -1,0 +1,45 @@
+server:
+  port: 9999
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/authentication_db
+    username: postgres
+    password: postgres
+
+  kafka:
+    bootstrap-servers: localhost:9092, localhost:9094
+    producer:
+      acks: all
+      properties:
+        delivery.timeout.ms: 10000
+        linger.ms: 0
+        request.timeout.ms: 5000
+        enable.idempotence: true
+        max.in.flight.requests.per.connection: 5
+
+  mvc:
+    throw-exception-if-no-handler-found: true
+  web:
+    resources:
+      add-mappings: false
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    open-in-view: false
+
+  liquibase:
+    change-log: classpath:db/db-changelog-master.yml
+jwt:
+  secret: F8A136B44BE6E9E970F1B0851E23632A3FC28DD4A40979BDB904A6C4D54C925A
+  access-life-time: 30m
+
+  refresh-life-time: 40m
+
+minio:
+  bucket: documents
+  url: http://172.17.1.23:30900
+  accessKey: admin
+  secretKey: yo6eATNR9r
